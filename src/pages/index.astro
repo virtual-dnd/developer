@@ -1,38 +1,59 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Nurl Developers">
-	<main>
-		<h1 class="text-gradient">Nurl Developers</h1>
-		<p>
-			The open source API for developers to build their own Nurl extensions. Coming soon...
-		</p>
-	</main>
+  <main>
+    <p>
+      The open source API for developers to build their own Nurl extensions.
+    </p>
+    <p class="headline-code">Coming Soon</p>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
+  main {
+    margin: auto;
+    padding-bottom: 4rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding-top: 4rem;
+    height: 60dvh;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .headline-code {
+		position: relative
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 4rem;
+  }
+
+	.headline-code::after {
+		animation: blink 1s infinite;
+		content: " |";
 	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+
+	@keyframes blink {
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
 	}
 </style>

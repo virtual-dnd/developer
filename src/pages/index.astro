@@ -5,7 +5,8 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Nurl Developers">
   <main>
     <p>
-      The open source API for developers to build their own Nurl extensions.
+      The <strong>open source API</strong> for <strong>developers</strong> to
+      build their own <strong>Nurl extensions</strong>.
     </p>
     <p class="headline-code">Coming Soon</p>
   </main>
@@ -20,7 +21,7 @@ import Layout from "../layouts/Layout.astro";
     padding-top: 4rem;
     height: 60dvh;
     width: 800px;
-    max-width: calc(100% - 2rem);
+    max-width: 60ch;
     color: white;
     font-size: 20px;
     line-height: 1.6;
@@ -34,26 +35,31 @@ import Layout from "../layouts/Layout.astro";
   }
 
   .headline-code {
-		position: relative
+    position: relative;
     font-size: 2rem;
     font-weight: bold;
     margin-top: 4rem;
   }
 
-	.headline-code::after {
-		animation: blink 1s infinite;
-		content: " |";
-	}
+  .headline-code::after {
+    animation: blink 1s infinite;
+    content: "|";
+    color: var(--sandboxGold);
+  }
 
-	@keyframes blink {
-		0% {
-			opacity: 0;
-		}
-		50% {
-			opacity: 1;
-		}
-		100% {
-			opacity: 0;
-		}
-	}
+  strong {
+    color: var(--sandboxGold);
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 </style>

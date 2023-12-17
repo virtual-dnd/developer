@@ -93,6 +93,13 @@ const oneUpPink = "#ff00ff";
     oneUpPink: oneUpPink,
   }}
 >
+  @font-face {
+    font-family: "OxProto";
+    src: url("/fonts/0xProto-Regular.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   *,
   *::before,
   *::after {
@@ -108,7 +115,7 @@ const oneUpPink = "#ff00ff";
   html {
     background-color: var(--text);
     color: var(--surface);
-    font-family: system-ui, sans-serif;
+    font-family: "OxProto", system-ui, sans-serif;
     font-size: 1em;
     line-height: 1.3;
     text-size-adjust: 100%;

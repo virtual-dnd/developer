@@ -24,39 +24,6 @@ const oneUpPink = "#ff00ff";
   <head>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta
-      name="description"
-      content="The official developer portal for Nurl."
-    />
-    <meta
-      name="keywords"
-      content="developer, API, developer API, nurl API, ttrpg, tabletop, rpg, companion, ttrpg ai, ai, nurl, nurl app, ttrpg app, time tracker, ttrpg time tracker, table top games, d&d, dungeons and dragons, warhammer, warhammer 3000"
-    />
-    <meta name="theme-color" content="#13151a" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@nurl_inc" />
-    <meta name="twitter:title" content={title} />
-    <meta
-      name="twitter:description"
-      content="The official developer portal for Nurl."
-    />
-    <meta name="twitter:image" content="https://astro.build/twitter-card.jpg" />
-    <meta property="og:title" content={title} />
-    <meta
-      property="og:description"
-      content="The official developer portal for Nurl."
-    />
-    <meta property="og:image" content="https://astro.build/twitter-card.jpg" />
-    <meta property="og:url" content="https://nurl.website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Nurl" />
-    <meta property="og:locale" content="en_US" />
-
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] =
@@ -71,8 +38,52 @@ const oneUpPink = "#ff00ff";
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "k5028h9zci");
     </script>
-  </head>
 
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="The official developer portal for Nurl."
+    />
+    <meta
+      name="keywords"
+      content="developer, API, developer API, nurl API, ttrpg, tabletop, rpg, companion, ttrpg ai, ai, nurl, nurl app, ttrpg app, time tracker, ttrpg time tracker, table top games, d&d, dungeons and dragons, warhammer, warhammer 3000"
+    />
+    <meta name="theme-color" content="#13151a" />
+
+    <!-- X tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@nurl_inc" />
+    <meta name="twitter:title" content={title} />
+    <meta
+      name="twitter:description"
+      content="See the open-source extension API at https://developers.nurl.app today."
+    />
+    <meta
+      name="twitter:image"
+      content="https://developers.nurl.app/og-meta.jpg"
+    />
+    <meta name="twitter:image:alt" content="Nurl logo" />
+
+    <!-- OG tags -->
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="The open source API for Nurl extensions."
+    />
+    <meta
+      property="og:image"
+      content="https://developers.nurl.app/og-meta.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://developers.nurl.app" />
+    <meta property="og:site_name" content="Nurl" />
+    <meta property="og:locale" content="en_US" />
+
+    <title>{title}</title></head
+  >
   <body>
     <Header />
     <slot />
